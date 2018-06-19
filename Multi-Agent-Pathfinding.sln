@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Multi-Agent-Pathfinding", "Multi-Agent-Pathfinding\Multi-Agent-Pathfinding.csproj", "{450350AD-E24C-4608-B740-5DAB9E174BCA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{450350AD-E24C-4608-B740-5DAB9E174BCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{450350AD-E24C-4608-B740-5DAB9E174BCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{450350AD-E24C-4608-B740-5DAB9E174BCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{450350AD-E24C-4608-B740-5DAB9E174BCA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6AC65AFD-4EC3-4E3F-8988-4A0E11D251B4}
+	EndGlobalSection
+EndGlobal
