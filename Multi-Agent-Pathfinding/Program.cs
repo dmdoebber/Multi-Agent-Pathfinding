@@ -6,7 +6,9 @@ namespace Multi_Agent_Pathfinding
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+
+            
+            Console.ReadKey();
         }
     }
 }
