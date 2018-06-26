@@ -23,11 +23,6 @@ namespace Multi_Agent_Pathfinding
             agents.Add(new Agent(cubo, 9, 0, 0, 0, 9, 9));
 
 
-
-
-
-
-
             Console.ReadKey();
         }
     }
