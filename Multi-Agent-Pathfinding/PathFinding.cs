@@ -48,13 +48,10 @@ class PathFinding
 
             foreach (Node neighbour in cubo.getNeighbours(currentNode))
             {
-                
                 bool haveContraint = false;
-                if(constraints != null)
-                    foreach (Tuple<Agent, Node, int> constraint in constraints)
-                        if (constraint.Item2 == neighbour)
-                            haveContraint = true;
-
+                if (constraints != null)
+                    haveContraint = constraints.Exists(node => node.Item2 == neighbour);
+                
                 if (!neighbour.walkable || closedSet.Contains(neighbour) || haveContraint)
                     continue;
 

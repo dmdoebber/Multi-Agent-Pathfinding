@@ -59,6 +59,7 @@ namespace Multi_Agent_Pathfinding
                     for (int coluna = 0; coluna < solutions.Count; coluna++)
                     {
                         if (solutions[coluna] == null) break;
+
                         if (linha < solutions[coluna].Count)
                             Console.Write("(" + solutions[coluna][linha].x + " , " + solutions[coluna][linha].y + " ," + solutions[coluna][linha].z + ")   \t");
                         else
