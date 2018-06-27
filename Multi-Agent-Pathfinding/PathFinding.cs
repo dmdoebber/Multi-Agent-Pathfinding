@@ -11,10 +11,10 @@ class PathFinding
         this.cubo = cubo;
     }
 
-    public List<Node> FindPath(Node startNode, Node targetNode)
+    public List<Node> FindPath(Node startNode, Node targetNode, List<Tuple<Agent, Node, int>> constraints)
     {
-        if(startNode == null) { Console.Write("Ponto inicial invalido \n"); return null; }
-        if(targetNode == null) { Console.Write("Ponto final invalido \n"); return null; }
+        if(startNode == null) { Console.Write("Invalid start point! \n"); return null; }
+        if(targetNode == null) { Console.Write("Ivalid end point! \n"); return null; }
 
         startNode.walkable = true;
         targetNode.walkable = true;
@@ -48,7 +48,14 @@ class PathFinding
 
             foreach (Node neighbour in cubo.getNeighbours(currentNode))
             {
-                if (!neighbour.walkable || closedSet.Contains(neighbour))
+                
+                bool haveContraint = false;
+                if(constraints != null)
+                    foreach (Tuple<Agent, Node, int> constraint in constraints)
+                        if (constraint.Item2 == neighbour)
+                            haveContraint = true;
+
+                if (!neighbour.walkable || closedSet.Contains(neighbour) || haveContraint)
                     continue;
 
                 float newMovementeCostToNeighbour = currentNode.gCost + neighbour.gCost;

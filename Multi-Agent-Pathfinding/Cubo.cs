@@ -25,7 +25,7 @@ class Cubo
             for(int y = 0; y < size; y++)
                 for(int z = 0; z < size; z++)
                 {
-                    if (rnd.Next(4) == 1)
+                    if (rnd.Next(5) == 1)
                         walkable = false;
                     else
                     {

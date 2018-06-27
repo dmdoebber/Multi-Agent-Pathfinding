@@ -7,6 +7,7 @@ class Agent
 {
     public Node startNode;
     public Node targetNode;
+    public int solutionPosition;
     
     public Agent(Cubo cubo, int xS, int yS, int zS, int xE, int yE, int zE)
     {
